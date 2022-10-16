@@ -24,7 +24,6 @@ app.get(
 );
 
 // `app` has a specialised `FastifyInstance` type, but it's not assignable to the default `FastifyInstance` generic
-// @ts-expect-error
 export const handler = awsLambdaFastify(app, {
   serializeLambdaArguments: false,
 });
